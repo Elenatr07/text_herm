@@ -61,14 +61,25 @@ const swiper = new Swiper('.swiper', {
     
     roundLengths: false,
     centeredSlides: true,
-  
+    centerMode: true,
  
 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
   },
-
+  on: {
+        slideChange: function() {
+            setTimeout(function () {
+                swiper.params.mousewheel.releaseOnEdges = false;
+            }, 500);
+        },
+        reachEnd: function() {
+            setTimeout(function () {
+                swiper.params.mousewheel.releaseOnEdges = true;
+            }, 750);
+        }
+    }
 
 
 
