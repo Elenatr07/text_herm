@@ -81,7 +81,12 @@ const swiper = new Swiper('.swiper', {
             setTimeout(function () {
                 swiper.params.mousewheel.releaseOnEdges = true;
             }, 750);
-        }
+        },
+        reachBeginning: function() {
+            setTimeout(function () {
+                swiper.params.mousewheel.releaseOnEdges = true;
+            }, 750);
+        },
     },
     injectStyles: [
         `
