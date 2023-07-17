@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="swiper-bundle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;1,500&family=Montserrat:wght@600;900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+  <div class="header_block"></div>
+    <div class=" swiper3">
+      <!-- Swiper -->
+      <div thumbsSlider="" class="swiper slider user" >
+        <div class="swiper-wrapper speed">
+          <div class="swiper-slide block">
+            <h3 class="heading-4">Bitcoin DeFi made easy</h3>
+            <p class="text-block">Our vaults execute sophisticated derivatives <br> strategies <strong>for you</strong></p>
+            
+          </div>
+          <div class="swiper-slide block">
+            <h3 class="heading-4">Unlock hedge fund <br>strategies</h3> 
+            <p class="text-block">Get access to high-yielding and uncorrelated <br>strategies previously reserved for the ultra- <br>wealthy. </p>
+            
+          </div>
+          <div class="swiper-slide block">
+            <h3 class="heading-4">Secure & trustless</h3>
+            <p class="text-block">Thanks to Clarity smart contracts you never <br>  have to give up custody over your Bitcoin.</p>
+            
+          </div>
+  
+        </div>
+      </div>
+     
+      
+      
+      <!-- end Swiper -->
+    </div>
+    <div class="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+let slider= new Swiper('.slider', {
+  spaceBetween: 5,
+  slidesPerView: 'auto',
+  mousewheel: true,
+  allowTouchMove: true,
+  freeMode: true,
+
+  
+  releaseOnEdges: true,
+
+  speed: 1000,
+  scrollbar: {
+    el: '.scroll',
+    hide: false,
+    draggable: true,
+  },
+  on: {
+    scroll: function (swiper, event) {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      let scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+      if (swiper.isBeginning || swiper.isEnd) {
+        window.scrollTo(scrollLeft, scrollTop);
+      }
+    }
+  }
+});
+    </script>
+</body>
+</html>
