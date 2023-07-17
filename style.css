@@ -33,6 +33,7 @@
     font-size: 15px;
     font-weight: 600;
     line-height: 203%;
+    margin-bottom: 144px;
 }
 .strong {
     font-weight: bold;
@@ -49,6 +50,24 @@
     background-color: red;
 }
 
-.speed {
-    transition-duration: 0.1s!important;
-}
+.swiper-pagination-bullet {
+    border-radius: 8px;
+    background: #939090;
+    width: 16px;
+    height: 16px;
+    margin-left: 36px !important;
+    margin-right: 36px !important;
+    opacity: 1;
+    
+    
+    }
+    .swiper-pagination-bullet-active{
+    border-radius: 8px;
+    background: #F7931A;
+    width: 51px;
+    height: 16px;
+    
+    }
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: var(--swiper-pagination-bottom,88px);
+    }
